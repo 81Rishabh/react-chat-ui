@@ -10,7 +10,7 @@ root.render(
     <Router>
       <Routes>
         <Route path='/*' element={<App />} />  
-        <Route path="/" element={<Navigate to="/chat" replace/>} />
+        <Route path="/" element={<Navigate to="/chat" replace/>} exact="true" />
       </Routes>
     </Router>
 );
