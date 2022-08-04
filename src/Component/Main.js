@@ -21,8 +21,8 @@ function Main() {
       />
       <LSidebar setshow={setshow} newcontact={newcontact} />
       <Routes>
-        <Route path="chat/:userId" element={<MessageContainer show={show} />} />
-        <Route path="/chat" element={<NoConversation />} exact="true" />
+        <Route path="chat/:userId" element={<MessageContainer show={show} />}/>
+        <Route path="/" element={<NoConversation />} exact="true" />
       </Routes>
       <Routes>
         <Route path="chat/:userId" element={<RSidebar />} />
