@@ -9,14 +9,9 @@ function RSidebar() {
   const { userId } = useParams();
 
   useEffect(() => {
-    handleProfile();
+     setuser(users.filter((user) => user.id === userId));
   }, [userId]);
 
-  function handleProfile() {
-    //  useId -> coming from url  params
-    let user = users.filter((user) => user.id === userId);
-    setuser(user);
-  }
 
   return (
     <aside className="right-sidebar">
