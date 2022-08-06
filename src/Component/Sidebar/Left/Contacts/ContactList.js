@@ -5,7 +5,7 @@ import Avatar from "../../../Avatar/Avatar";
 function ContactList(props) {
   const { id , name, msg, time, img_url } = props.user;
   return (
-    <NavLink to={`/chat/${id}`} >
+    <NavLink to={`/chats/${id}`} >
       <li className="users-list-item" >
         <div className="left-block">
           {img_url && <Avatar img_url={img_url} size="35"/>}

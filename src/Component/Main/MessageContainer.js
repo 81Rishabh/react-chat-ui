@@ -17,13 +17,12 @@ function Message() {
   const [isSubmit , setisSubmit] = useState(false);
   const [localStorageMessage, setlocalStorageMessage] = useState([]);
   
-
   // set conversation
   useEffect(() => {
      setconversations(conversation.filter((data) => data.userid === userId));
      setUser(users.filter((data) => data.id === userId));
   }, [userId]);
-
+ 
 
   // handleSubmit
   useEffect(() => {
